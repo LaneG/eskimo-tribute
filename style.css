@@ -1,0 +1,55 @@
+@media all and (max-width: 800px) {
+   body { font-size: 200%;}
+}
+
+body {
+  background: #abcdef;
+  background-image: url('pattern.svg');
+  background-repeat: repeat-y repeat-x;
+  color: #36454f;
+  font-family: 'tahoma', arial, sans-serif;
+  font-size: 105%;
+  }
+
+#container {
+  margin: auto; 
+  width: 75%; 
+  max-width: 600px;
+  }
+
+#content {
+  background-color:#fafafa; 
+  border-radius: 3px;
+  box-shadow:0 0 20px rgba(0,0,0,.5); 
+  padding: 0 20px;
+  }
+
+#footer {
+  font-size: .75em;
+  text-transform: uppercase;
+  text-align: center;
+  }
+
+H1 { 
+  font-size: 200%;
+  text-align: center;
+  text-transform: capitalize;
+  padding-top: 5%;
+  }
+ß
+H2 {
+  font-size: 125%;
+  }
+
+p {
+  line-height: 1.5em;
+  }
+
+ol li {
+  padding-bottom: 1em;
+  }
+
+.last {
+  padding-bottom: 1em;
+
+  }

@@ -1,0 +1,62 @@
+<!-- http://eskimoblood.github.io/gerstnerizer/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8" />
+<title>Repeating SVG Background with Gerstnerizer</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+<div id="container">
+  <div id="content">
+    <H1>Repeating SVG Background</H1>
+    <p>This website features a repeating SVG background created with <a href="http://eskimoblood.github.io/gerstnerizer/">Gerstnerizer</a>, a free online tool from <a href="https://twitter.com/eskimobloood">Andreas Köberle</a>.</p>
+
+    <h2>How I did it</h2>
+    <p>Here are some notes about how I made the background for this page:</p>
+    
+    <ol>
+      <li>I had best results with the square (middle) pattern. I was not able to get the triangle or hexagon pattern to repeat properly in my browser.</li>
+      <li>I used grid settings 6,6,100. That was enough instances I could see how it would repeat, and it fit on my screen. </li>
+      <li>To draw lines, click and drag on the grid in the left column. To remove lines alt+click on the lines.</li>
+      <li>Be careful not to click the "back" button or reload the page or you will lose all your work.</li>
+      <li>When ready to export, change the grid to 1,1,100 and save using "command+shift+s" to save the file as .svg. </li>
+      <li>Open the .svg file in Adobe Illustrator. Edit the artboard to be the size of the image and adjust the line colors as you like. I am using two shades of blue for a subtle effect.</li>
+      <li>I added the background to my css file as: </li>
+      <pre><code>
+          body { 
+          background-image: url('pattern.svg');
+          background-repeat: repeat-y repeat-x;
+          } 
+      </code></pre>
+   
+    </ol>
+
+    <h2>A few more tips</h2>
+
+    <p>The tool is fun to use, but a little hard to figure out how it works. I noticed it worked best in Google's <a href="http://www.google.com/intl/en/chrome/browser">Chrome</a> browser. I suggest you click "Random Lines" a few times to get the hang of it. I wasn't able to get the "Search for palettes feature working. I expected that I'd be able to change the color of my lines, or maybe even color different parts of the image. It didn't work as expected. Typing a word in the box brings up a drop down of palettes, but clicking on anthing in the drop down just dismisses the palettes with now change in line color.</p>
+
+    <p>Andreas responded to my requests for information with the following tweets:</p>
+
+    <blockquote class="twitter-tweet" align="center" lang="en"><p><a href="https://twitter.com/thinknow">@thinknow</a> It uses the colourLover API to find palletes by key words. (<a href="http://t.co/xU9eZ4hjbN">http://t.co/xU9eZ4hjbN</a>)</p>&mdash; Andreas Köberle (@eskimobloood) <a href="https://twitter.com/eskimobloood/status/523894742380478464">October 19, 2014</a></blockquote>
+
+    <blockquote class="twitter-tweet last" align="center" lang="en"><p><a href="https://twitter.com/thinknow">@thinknow</a> If you select a loaded palette the pattern should be colored. At the moment you cant specify colors for specific line.</p>&mdash; Andreas Köberle (@eskimobloood) <a href="https://twitter.com/eskimobloood/status/523901853738991617">October 19, 2014</a></blockquote>
+
+    <p class="last">Thanks for reading, I hope you find this helpful!</p>
+
+  </div>
+
+  <div id="footer">
+    <p>From the digits of <a href="https://twitter.com/thinknow">Lane Halley</a></p>
+  </div>
+</div>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<script async src="platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+</html>
